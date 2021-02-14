@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <title>Vivek Studio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/utility.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mediaQueries.css">
+</head>
+<body class="fadeIn">
+    
+    <!-- Hamburger icon -->
+    <label for="toggle" class="nav__button">
+        <i class="fa fa-bars"></i>
+    </label>
+
+    <input type="checkbox" id="toggle">
+
+    <!-- Mobile navigation -->
+    <nav class="navigation mobile-nav">
+        <div class="search-box">
+            <a href="#">
+                <i class="fas fa-search"></i>
+            </a>
+            <input type="search" name="search-item" id="search" placeholder="search">
+            <a href="#">
+                <i class="fas fa-microphone"></i>
+            </a>
+        </div>
+        <ul>
+            <li><a href="#">Favourites</a></li>
+            <li><a href="#">My Playlist</a></li>
+            <li><a href="#">Premium</a></li>
+        </ul>
+        <div class="icon-box">
+            <a href="#" class="notification-icon">
+                <i class="fas fa-bell"></i>
+            </a>
+            <a href="#" class="profile-pic">
+                <i class="fas fa-user-tie"></i>
+            </a>
+        </div>
+        <div class="logo">
+            <a href="#" class="icon">
+                <i class="fas fa-guitar"></i>
+            </a>
+            <a href="#" class="logo-text">
+                <h3>Vivek</h3>
+                <span>Studio</span>
+            </a>
+        </div>
+    </nav>
+
+
+    <!-- Navbar start -->
+    <nav class="container navigation">
+        <div class="nav-left">
+
+            <!-- logo box -->
+            <div class="logo">
+                <a href="#" class="icon">
+                    <i class="fas fa-guitar"></i>
+                </a>
+                <a href="#" class="logo-text">
+                    <h3>Vivek</h3>
+                    <span>Studio</span>
+                </a>
+            </div>
+
+            <a href="#">Favourites</a>
+            <a href="#">My Playlist</a>
+            <a href="#">Premium</a>
+        </div>
+
+        <div class="nav-right">
+            <div class="search-box">
+                <a href="#">
+                    <i class="fas fa-search"></i>
+                </a>
+                <input type="search" name="search-item" id="search" placeholder="search">
+                <a href="#">
+                    <i class="fas fa-microphone"></i>
+                </a>
+            </div>
+            <a href="#" class="notification-icon">
+                <i class="fas fa-bell"></i>
+            </a>
+            <a href="#" class="profile-pic">
+                <i class="fas fa-user-tie"></i>
+            </a>
+        </div>
+    </nav>
+
+
+    <!-- Main content of website -->
+    <main class="container">
+
+        <!-- left side section -->
+        <section class="left-section">
+
+            <!-- Header -->
+            <header class="img-container fadeInDown">
+                <div class="img-slider">
+                    <div class="img-box">
+                        <img src="./img/covers/cover5.jpeg" alt="cover image">
+                    </div>
+
+                    <div class="img-box">
+                        <img src="./img/covers/cover4.jpg" alt="cover image">
+                    </div>
+
+                    <div class="img-box">
+                        <img src="./img/covers/cover3.jpg" alt="cover image">
+                    </div>
+
+                    <div class="img-box">
+                        <img src="./img/covers/cover5.jpeg" alt="cover image">
+                    </div>
+
+                    <div class="img-box">
+                        <img src="./img/covers/cover1.jpeg" alt="cover image">
+                    </div>
+                </div>
+            </header>
+
+
+            <!-- Section latest releases -->
+            <section class="latest-release fadeInLeft">
+                <h2 class="heading">Latest Release</h2>
+
+                <!-- Container -->
+                <div class="latest-release__songs">
+                    <div class="song-card">
+                        <div class="left">
+                            <div class="img">
+                                <img src="./img/latest/e1.jpeg" alt="latest song image">
+                            </div>
+                            <div class="content">
+                                <a href="./pages/singlePlaylist.html">
+                                    <h6>Something Just Like This</h6>
+                                </a>
+                                <span>AUG 11, 2020</span>
+                            </div>
+                        </div>
+
+                        <div class="right">
+                            <span>4:44</span>
+                        </div>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+
+                    <div class="song-card">
+                        <div class="left">
+                            <div class="img">
+                                <img src="./img/latest/e2.jpeg" alt="latest song image">
+                            </div>
+                            <div class="content">
+                                <a href="./pages/singlePlaylist.html">
+                                    <h6>Dont let me down</h6>
+                                </a>
+                                <span>SEP 10, 2020</span>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <span>4:12</span>
+                        </div>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+
+                    <div class="song-card">
+                        <div class="left">
+                            <div class="img">
+                                <img src="./img/latest/e3.jpeg" alt="latest song image">
+                            </div>
+                            <div class="content">
+                                <a href="./pages/singlePlaylist.html">
+                                    <h6>Closer</h6>
+                                </a>
+                                <span>AUG 11, 2020</span>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <span>4:44</span>
+                        </div>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+
+                    <div class="song-card">
+                        <div class="left">
+                            <div class="img">
+                                <img src="./img/latest/h2.jpg" alt="latest song image">
+                            </div>
+                            <div class="content">
+                                <a href="./pages/singlePlaylist.html">
+                                    <h6>Move</h6>
+                                </a>
+                                <span>AUG 11, 2020</span>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <span>4:44</span>
+                        </div>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Popular artist section -->
+            <h2 class="heading">Popular Artist</h2>
+            <section class="popular-artist">
+
+                <div class="artist-container">
+
+                    <!-- Artist card -->
+                    <div class="artist">
+                        <div class="img-1 bg-img">
+                            <a href="./pages/singlePlaylist.html" class="slide-up">
+                                <i class="fas fa-play-circle"></i>
+                            </a>
+                        </div>
+                        <h6>Carryminati</h6>
+                    </div>
+
+                    <div class="artist">
+                        <div class="img-2 bg-img">
+                            <a href="./pages/singlePlaylist.html" class="slide-up">
+                                <i class="fas fa-play-circle"></i>
+                            </a>
+                        </div>
+                        <h6>Dharia</h6>
+                    </div>
+
+                    <div class="artist">
+                        <div class="img-3 bg-img">
+                            <a href="./pages/singlePlaylist.html" class="slide-up">
+                                <i class="fas fa-play-circle"></i>
+                            </a>
+                        </div>
+                        <h6>Alen walker</h6>
+                    </div>
+
+                    <div class="artist">
+                        <div class="img-4 bg-img">
+                            <a href="./pages/singlePlaylist.html" class="slide-up">
+                                <i class="fas fa-play-circle"></i>
+                            </a>
+                        </div>
+                        <h6>Justine Biber</h6>
+                    </div>
+
+                    <div class="artist">
+                        <div class="img-5 bg-img">
+                            <a href="./pages/singlePlaylist.html" class="slide-up">
+                                <i class="fas fa-play-circle"></i>
+                            </a>
+                        </div>
+                        <h6>Marshmellow</h6>
+                    </div>
+
+                    <div class="artist">
+                        <div class="img-6 bg-img">
+                            <a href="./pages/singlePlaylist.html" class="slide-up">
+                                <i class="fas fa-play-circle"></i>
+                            </a>
+                        </div>
+                        <h6>Skill set</h6>
+                    </div>
+
+                    <div class="artist">
+                        <div class="img-7 bg-img">
+                            <a href="./pages/singlePlaylist.html" class="slide-up">
+                                <i class="fas fa-play-circle"></i>
+                            </a>
+                        </div>
+                        <h6>Jos</h6>
+                    </div>
+
+                    <div class="artist">
+                        <div class="img-8 bg-img">
+                            <a href="./pages/singlePlaylist.html" class="slide-up">
+                                <i class="fas fa-play-circle"></i>
+                            </a>
+                        </div>
+                        <h6>Alock</h6>
+                    </div>
+
+                    <div class="artist">
+                        <div class="img-9 bg-img">
+                            <a href="./pages/singlePlaylist.html" class="slide-up">
+                                <i class="fas fa-play-circle"></i>
+                            </a>
+                        </div>
+                        <h6>Artist</h6>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Section Music type  -->
+            <section class="music-type">
+
+                <!-- card container -->
+                <div class="music-type__card-container">
+                    <div class="main-container">
+                        <div class="music-type__card bg-1">
+                            <div class="music-type__card--text-box">
+                                <a href="#">Love</a>
+                            </div>
+                        </div>
+    
+                        <div class="music-type__card bg-2">
+                            <div class="music-type__card--text-box">
+                                <a href="#">Retro</a>
+                            </div>
+                        </div>
+    
+                        <div class="music-type__card bg-3">
+                            <div class="music-type__card--text-box">
+                                <a href="#">Chill</a>
+                            </div>
+                        </div>
+    
+                        <div class="music-type__card bg-4">
+                            <div class="music-type__card--text-box">
+                                <a href="#">Rock</a>
+                            </div>
+                        </div>
+    
+                        <div class="music-type__card bg-5">
+                            <div class="music-type__card--text-box">
+                                <a href="#">Mood</a>
+                            </div>
+                        </div>
+    
+                        <div class="music-type__card bg-6">
+                            <div class="music-type__card--text-box">
+                                <a href="#">Pop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- bottom container -->
+                <div class="music-type__bottom-container">
+                    <div class="music-type__card-b b-1">
+                        <div class="drop">
+                            <div class="text-box">
+                                <a href="#">Electronics</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="music-type__card-b b-2">
+                        <div class="drop">
+                            <div class="text-box">
+                                <a href="#">Road Trip</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="music-type__card-b b-3">
+                        <div class="drop">
+                            <div class="text-box">
+                                <a href="#">Party</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Section Latest english songs -->
+            <h2 class="heading">Latest English Songs</h2>
+            <section class="latest-songs">
+                <div class="latest-songs__container">
+                    <div class="latest-card">
+                        <div class="latest-card__img">
+                            <img src="./img/latest/e1.jpeg" alt="latest-english-song">
+                        </div>
+                        <a href="#">Onism</a>
+                        <h6 class="date">AUG 11, 2017</h6>
+                    </div>
+
+                    <div class="latest-card">
+                        <div class="latest-card__img">
+                            <img src="./img/latest/e2.jpeg" alt="latest-english-song">
+                        </div>
+                        <a href="#">Onism</a>
+                        <h6 class="date">AUG 11, 2017</h6>
+                    </div>
+
+                    <div class="latest-card">
+                        <div class="latest-card__img">
+                            <img src="./img/latest/e3.jpeg" alt="latest-english-song">
+                        </div>
+                        <a href="#">Onism</a>
+                        <h6 class="date">AUG 11, 2017</h6>
+                    </div>
+
+                    <div class="latest-card">
+                        <div class="latest-card__img">
+                            <img src="./img/latest/e4.jpeg" alt="latest-english-song">
+                        </div>
+                        <a href="#">Onism</a>
+                        <h6 class="date">AUG 11, 2017</h6>
+                    </div>
+
+                    <div class="latest-card">
+                        <div class="latest-card__img">
+                            <img src="./img/latest/e5.jpeg" alt="latest-english-song">
+                        </div>
+                        <a href="#">Onism</a>
+                        <h6 class="date">AUG 11, 2017</h6>
+                    </div>
+
+                    <div class="latest-card">
+                        <div class="latest-card__img">
+                            <img src="./img/latest/e6.jpg" alt="latest-english-song">
+                        </div>
+                        <a href="#">Onism</a>
+                        <h6 class="date">AUG 11, 2017</h6>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section latest hindi songs -->
+
+            <h2 class="heading">Latest Hindi Songs</h2>
+            <section class="latest-songs">
+                <div class="latest-songs__container">
+                    <div class="latest-card">
+                        <div class="latest-card__img">
+                            <img src="./img/latest/h1.jpeg" alt="latest-english-song">
+                        </div>
+                        <a href="#">Onism</a>
+                        <h6 class="date">AUG 11, 2017</h6>
+                    </div>
+
+                    <div class="latest-card">
+                        <div class="latest-card__img">
+                            <img src="./img/latest/h3.jpeg" alt="latest-english-song">
+                        </div>
+                        <a href="#">Onism</a>
+                        <h6 class="date">AUG 11, 2017</h6>
+                    </div>
+
+                    <div class="latest-card">
+                        <div class="latest-card__img">
+                            <img src="./img/latest/h4.jpeg" alt="latest-english-song">
+                        </div>
+                        <a href="#">Onism</a>
+                        <h6 class="date">AUG 11, 2017</h6>
+                    </div>
+
+                    <div class="latest-card">
+                        <div class="latest-card__img">
+                            <img src="./img/latest/h5.jpeg" alt="latest-english-song">
+                        </div>
+                        <a href="#">Onism</a>
+                        <h6 class="date">AUG 11, 2017</h6>
+                    </div>
+
+                    <div class="latest-card">
+                        <div class="latest-card__img">
+                            <img src="./img/latest/h6.jpeg" alt="latest-english-song">
+                        </div>
+                        <a href="#">Onism</a>
+                        <h6 class="date">AUG 11, 2017</h6>
+                    </div>
+
+                    <div class="latest-card">
+                        <div class="latest-card__img">
+                            <img src="./img/latest/h7.jpeg" alt="latest-english-song">
+                        </div>
+                        <a href="#">Onism</a>
+                        <h6 class="date">AUG 11, 2017</h6>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Right side section -->
+        <aside class="my-playlist fadeInRight">
+        
+            <div class="title">
+                <h2>Queue</h2>
+                <div>
+                    <a href="#">Queue</a>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+            </div>
+
+            <div class="queue">
+                <div class="queue-card">
+                    <div class="queue-content">
+                        <span class="seq-num">01</span>
+                        <img src="./img/queue/asset 5.jpeg" alt="your playlist image">
+                        <div>
+                            <a href="#">Mirage</a>
+                            <h5>Else</h5>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+
+                <div class="queue-card">
+                    <div class="queue-content">
+                        <span class="seq-num">02</span>
+                        <img src="./img/queue/asset 6.jpeg" alt="your playlist image">
+                        <div>
+                            <a href="#">Marry</a>
+                            <h5>Rose</h5>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+
+                <div class="queue-card">
+                    <div class="queue-content">
+                        <span class="seq-num">03</span>
+                        <img src="./img/queue/asset 7.jpeg" alt="your playlist image">
+                        <div>
+                            <a href="#">New skin</a>
+                            <h5>Fume</h5>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+
+                <div class="queue-card">
+                    <div class="queue-content">
+                        <span class="seq-num">04</span>
+                        <img src="./img/queue/asset 8.jpeg" alt="your playlist image">
+                        <div>
+                            <a href="#">Mirage</a>
+                            <h5>Else</h5>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+
+                <div class="queue-card">
+                    <div class="queue-content">
+                        <span class="seq-num">05</span>
+                        <img src="./img/queue/asset 9.jpeg" alt="your playlist image">
+                        <div>
+                            <a href="#">Mirage</a>
+                            <h5>Else</h5>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+
+                <div class="queue-card">
+                    <div class="queue-content">
+                        <span class="seq-num">06</span>
+                        <img src="./img/queue/asset 10.jpeg" alt="your playlist image">
+                        <div>
+                            <a href="#">Mirage</a>
+                            <h5>Else</h5>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+
+                <div class="queue-card">
+                    <div class="queue-content">
+                        <span class="seq-num">07</span>
+                        <img src="./img/queue/asset 11.jpeg" alt="your playlist image">
+                        <div>
+                            <a href="#">Mirage</a>
+                            <h5>Else</h5>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+
+                <div class="queue-card">
+                    <div class="queue-content">
+                        <span class="seq-num">12</span>
+                        <img src="./img/queue/asset 12.jpeg" alt="your playlist image">
+                        <div>
+                            <a href="#">Mirage</a>
+                            <h5>Else</h5>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+
+
+
+                <div class="queue-card">
+                    <div class="queue-content">
+                        <span class="seq-num">13</span>
+                        <img src="./img/queue/asset 13.jpeg" alt="your playlist image">
+                        <div>
+                            <a href="#">Mirage</a>
+                            <h5>Else</h5>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+
+
+                <div class="queue-card">
+                    <div class="queue-content">
+                        <span class="seq-num">14</span>
+                        <img src="./img/queue/asset 14.jpeg" alt="your playlist image">
+                        <div>
+                            <a href="#">Mirage</a>
+                            <h5>Else</h5>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+
+
+                <div class="queue-card">
+                    <div class="queue-content">
+                        <span class="seq-num">15</span>
+                        <img src="./img/queue/asset 15.jpeg" alt="your playlist image">
+                        <div>
+                            <a href="#">Mirage</a>
+                            <h5>Else</h5>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+
+    
+
+
+
+</body>
+</html>
