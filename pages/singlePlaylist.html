@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your playlist</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/utility.css">
+    <link rel="stylesheet" href="../css/singlePlaylist.css">
+    <link rel="stylesheet" href="../css/mediaQueries.css">
+</head>
+
+<body class="fadeIn">
+
+    <!-- Hamburger icon -->
+    <label for="toggle" class="nav__button">
+        <i class="fa fa-bars"></i>
+    </label>
+
+    <input type="checkbox" id="toggle">
+
+    <!-- Mobile navigation -->
+    <nav class="navigation mobile-nav">
+        <div class="search-box">
+            <a href="#">
+                <i class="fas fa-search"></i>
+            </a>
+            <input type="search" name="search-item" id="search" placeholder="search">
+            <a href="#">
+                <i class="fas fa-microphone"></i>
+            </a>
+        </div>
+        <ul>
+            <li><a href="#">Favourites</a></li>
+            <li><a href="#">My Playlist</a></li>
+            <li><a href="#">Premium</a></li>
+        </ul>
+        <div class="icon-box">
+            <a href="#" class="notification-icon">
+                <i class="fas fa-bell"></i>
+            </a>
+            <a href="#" class="profile-pic">
+                <i class="fas fa-user-tie"></i>
+            </a>
+        </div>
+        <div class="logo">
+            <a href="../index.html" class="icon">
+                <i class="fas fa-guitar"></i>
+            </a>
+            <a href="../index.html" class="logo-text">
+                <h3>Ninja</h3>
+                <span>Studio</span>
+            </a>
+        </div>
+    </nav>
+
+
+    <!-- Navbar -->
+    <nav class="container navigation">
+        <div class="nav-left">
+
+            <!-- logo box -->
+            <div class="logo">
+                <a href="../index.html" class="icon">
+                    <i class="fas fa-guitar"></i>
+                </a>
+                <a href="../index.html" class="logo-text">
+                    <h3>Ninja</h3>
+                    <span>Studio</span>
+                </a>
+            </div>
+
+            <a href="#">Favourites</a>
+            <a href="#">My Playlist</a>
+            <a href="#">Premium</a>
+        </div>
+
+        <div class="nav-right">
+            <div class="search-box">
+                <a href="#">
+                    <i class="fas fa-search"></i>
+                </a>
+                <input type="search" name="search-item" id="search" placeholder="search">
+                <a href="#">
+                    <i class="fas fa-microphone"></i>
+                </a>
+            </div>
+            <a href="#" class="notification-icon">
+                <i class="fas fa-bell"></i>
+            </a>
+            <a href="#" class="profile-pic">
+                <i class="fas fa-user-tie"></i>
+            </a>
+        </div>
+    </nav>
+
+
+    <!-- Main section -->
+    <main class="container">
+
+        <section class="left-section">
+            <header class="about fadeIn">
+                <img class="about-img" src="../img/about/a1.jpg" alt="the chain smokers">
+                <div class="about-description">
+                    <div class="about-description__heading">
+                        <div>
+                            <h2>ChainSmokers</h2>
+                            <h6>American Band</h6>
+                        </div>
+                        <h6>1.1M Followers</h6>
+                    </div>
+
+                    <div class="about-content">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem pariatur quos facilis
+                            perferendis tempora quisquam praesentium magni. Voluptas expedita inventore esse quisquam
+                            incidunt quaerat reiciendis corporis perferendis! Vero, minima sequiVoluptatem pariatur quos
+                            facilis
+                            perferendis tempora quisquam praesentium magni. Voluptas expedita inventore esse quisquam
+                            incidunt quaerat reiciendis corporis perferendis! Vero, minima sequi.
+                        </p>
+                    </div>
+
+                    <div class="about-footer">
+                        <div>
+                            <button>Play All</button>
+                            <h6>267 Tracks | 125 Albums</h6>
+                        </div>
+
+                        <a href="#">Follow</a>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Playlist section -->
+            <section class="playlist fadeInLeft">
+                <div class="playlist-card">
+                    <div class="name">
+                        <h6 class="track-num">06</h6>
+                        <img src="../img/queue/asset 1.jpeg" alt="cover photo">
+                        <div>
+                            <a href="#">Mirage</a>
+                            <h6>Else</h6>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <h6>4:44</h6>
+                    </div>
+                    <div class="like">
+                        <a href="#">
+                            <i class="far fa-heart"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-plus"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="playlist-card">
+                    <div class="name">
+                        <h6 class="track-num">06</h6>
+                        <img src="../img/queue/asset 2.jpeg" alt="cover photo">
+                        <div>
+                            <a href="#">Mirage</a>
+                            <h6>Else</h6>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <h6>4:44</h6>
+                    </div>
+                    <div class="like">
+                        <a href="#">
+                            <i class="far fa-heart"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-plus"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="playlist-card">
+                    <div class="name">
+                        <h6 class="track-num">06</h6>
+                        <img src="../img/queue/asset 3.jpeg" alt="cover photo">
+                        <div>
+                            <a href="#">Mirage</a>
+                            <h6>Else</h6>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <h6>4:44</h6>
+                    </div>
+                    <div class="like">
+                        <a href="#">
+                            <i class="far fa-heart"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-plus"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="playlist-card">
+                    <div class="name">
+                        <h6 class="track-num">06</h6>
+                        <img src="../img/queue/asset 4.jpeg" alt="cover photo">
+                        <div>
+                            <a href="#">Mirage</a>
+                            <h6>Else</h6>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <h6>4:44</h6>
+                    </div>
+                    <div class="like">
+                        <a href="#">
+                            <i class="far fa-heart"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-plus"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="playlist-card">
+                    <div class="name">
+                        <h6 class="track-num">06</h6>
+                        <img src="../img/queue/asset 5.jpeg" alt="cover photo">
+                        <div>
+                            <a href="#">Mirage</a>
+                            <h6>Else</h6>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <h6>4:44</h6>
+                    </div>
+                    <div class="like">
+                        <a href="#">
+                            <i class="far fa-heart"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-plus"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="playlist-card">
+                    <div class="name">
+                        <h6 class="track-num">06</h6>
+                        <img src="../img/queue/asset 6.jpeg" alt="cover photo">
+                        <div>
+                            <a href="#">Mirage</a>
+                            <h6>Else</h6>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <h6>4:44</h6>
+                    </div>
+                    <div class="like">
+                        <a href="#">
+                            <i class="far fa-heart"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-plus"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="playlist-card">
+                    <div class="name">
+                        <h6 class="track-num">06</h6>
+                        <img src="../img/queue/asset 7.jpeg" alt="cover photo">
+                        <div>
+                            <a href="#">Mirage</a>
+                            <h6>Else</h6>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <h6>4:44</h6>
+                    </div>
+                    <div class="like">
+                        <a href="#">
+                            <i class="far fa-heart"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-plus"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="playlist-card">
+                    <div class="name">
+                        <h6 class="track-num">06</h6>
+                        <img src="../img/queue/asset 8.jpeg" alt="cover photo">
+                        <div>
+                            <a href="#">Mirage</a>
+                            <h6>Else</h6>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <h6>4:44</h6>
+                    </div>
+                    <div class="like">
+                        <a href="#">
+                            <i class="far fa-heart"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-plus"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+
+        <aside class="my-playlist fadeInRight">
+
+            <div class="similar-artist">
+                <div class="similar-artist__heading section-heading">
+                    <h2>Similar Artists</h2>
+                    <a href="#">View All</a>
+                </div>
+
+                <div class="similar-artist__queue">
+                    <div class="similar-artist__card">
+                        <img src="../img/artists/asset 3.jpeg" alt="artist photo">
+                        <div>
+                            <a href="#">Imagine Dragons</a>
+                            <h6>Pop Bands</h6>
+                        </div>
+
+                        <div class="time">
+                            <h6>4:44</h6>
+                        </div>
+                    </div>
+
+                    <div class="similar-artist__card">
+                        <img src="../img/artists/asset 4.jpeg" alt="artist photo">
+                        <div>
+                            <a href="#">Imagine Dragons</a>
+                            <h6>Pop Bands</h6>
+                        </div>
+
+                        <div class="time">
+                            <h6>4:44</h6>
+                        </div>
+                    </div>
+
+                    <div class="similar-artist__card">
+                        <img src="../img/artists/asset 5.jpeg" alt="artist photo">
+                        <div>
+                            <a href="#">Imagine Dragons</a>
+                            <h6>Pop Bands</h6>
+                        </div>
+
+                        <div class="time">
+                            <h6>4:44</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="recently-play">
+                <div class="section-heading">
+                    <h2>Recently Played</h2>
+                    <a href="#">View All</a>
+                </div>
+
+
+                <div class="queue">
+                    <div class="queue-card">
+                        <div class="queue-content">
+                            <span class="seq-num">01</span>
+                            <img src="../img/queue/asset 5.jpeg" alt="your playlist image">
+                            <div>
+                                <a href="#">Mirage</a>
+                                <h5>Else</h5>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <i class="far fa-heart"></i>
+                        </a>
+                    </div>
+
+                    <div class="queue-card">
+                        <div class="queue-content">
+                            <span class="seq-num">02</span>
+                            <img src="../img/queue/asset 6.jpeg" alt="your playlist image">
+                            <div>
+                                <a href="#">Worry about us</a>
+                                <h5>Rose</h5>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <i class="far fa-heart"></i>
+                        </a>
+                    </div>
+
+                    <div class="queue-card">
+                        <div class="queue-content">
+                            <span class="seq-num">03</span>
+                            <img src="../img/queue/asset 7.jpeg" alt="your playlist image">
+                            <div>
+                                <a href="#">New skin</a>
+                                <h5>Fume</h5>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <i class="far fa-heart"></i>
+                        </a>
+                    </div>
+
+                    <div class="queue-card">
+                        <div class="queue-content">
+                            <span class="seq-num">04</span>
+                            <img src="../img/queue/asset 8.jpeg" alt="your playlist image">
+                            <div>
+                                <a href="#">Mirage</a>
+                                <h5>Else</h5>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <i class="far fa-heart"></i>
+                        </a>
+                    </div>
+
+                    <div class="queue-card">
+                        <div class="queue-content">
+                            <span class="seq-num">05</span>
+                            <img src="../img/queue/asset 9.jpeg" alt="your playlist image">
+                            <div>
+                                <a href="#">Mirage</a>
+                                <h5>Else</h5>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <i class="far fa-heart"></i>
+                        </a>
+                    </div>
+
+                    <div class="queue-card">
+                        <div class="queue-content">
+                            <span class="seq-num">06</span>
+                            <img src="../img/queue/asset 10.jpeg" alt="your playlist image">
+                            <div>
+                                <a href="#">Mirage</a>
+                                <h5>Else</h5>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <i class="far fa-heart"></i>
+                        </a>
+                    </div>
+
+                    <div class="queue-card">
+                        <div class="queue-content">
+                            <span class="seq-num">07</span>
+                            <img src="../img/queue/asset 11.jpeg" alt="your playlist image">
+                            <div>
+                                <a href="#">Mirage</a>
+                                <h5>Else</h5>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <i class="far fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </aside>
+    </main>
+
+    
+</body>
+
+</html>
