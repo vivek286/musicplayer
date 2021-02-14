@@ -1,0 +1,332 @@
+section.left-section header.about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: var(--bg-color--light);
+}
+
+section.left-section header.about .about-img {
+    width: 500px;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-right: 1.5rem;
+}
+
+section.left-section header.about .about-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+section.left-section header.about .about-description {
+    width: calc(100% - 550px);
+}
+
+section.left-section header.about .about-description .about-description__heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+section.left-section header.about .about-description .about-description__heading div {
+    font-size: 1.2rem;
+}
+
+section.left-section header.about .about-description .about-description__heading h6 {
+    font-size: 1rem;
+}
+
+section.left-section header.about .about-description .about-content p {
+    font-size: .8rem;
+    margin-top: 1rem;
+}
+
+section.left-section header.about .about-description .about-footer {
+    margin-top: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+section.left-section header.about .about-description .about-footer div {
+    margin-right: 2rem;
+}
+
+section.left-section header.about .about-description .about-footer div button {
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    margin-bottom: .8rem;
+    background-image: -o-linear-gradient(var(--purple-dark), var(--purple-light));
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--purple-dark)), to(var(--purple-light)));
+    background-image: linear-gradient(var(--purple-dark), var(--purple-light));
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--pure);
+    -webkit-box-shadow: 0px 0px 8px 3px rgba(82, 51, 183, .63); 
+    box-shadow: 0px 0px 8px 3px rgba(82, 51, 183, .63);
+    -webkit-transition: -webkit-transform .3s ease;
+    transition: -webkit-transform .3s ease;
+    -o-transition: transform .3s ease;
+    transition: transform .3s ease;
+    transition: transform .3s ease, -webkit-transform .3s ease;
+}
+
+section.left-section header.about .about-description .about-footer div button:hover {
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+}
+
+section.left-section header.about .about-description .about-footer div h6 {
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+section.left-section header.about .about-description .about-footer a {
+    -webkit-transition: color .3s ease;
+    -o-transition: color .3s ease;
+    transition: color .3s ease;
+}
+
+section.left-section header.about .about-description .about-footer a:hover {
+    color: var(--orange);
+}
+
+
+/* Playlist */
+
+section.left-section section.playlist {
+    padding-top: 3rem;
+}
+
+section.left-section section.playlist .playlist-card {
+    background-color: var(--bg-gray-light);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 100px;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    margin-bottom: 1.5rem;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+section.left-section section.playlist .playlist-card:hover {
+    background-color: var(--bg-gray-dark);
+}
+
+section.left-section section.playlist .playlist-card .name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+section.left-section section.playlist .playlist-card .name h6.track-num {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-right: 1rem;
+}
+
+section.left-section section.playlist .playlist-card .name img {
+    width: 80px;
+    height: 80px;
+    margin-right: 1.5rem;
+}
+
+section.left-section section.playlist .playlist-card .name div a{
+    font-size: 1.2rem;
+    font-weight: 500;
+    -webkit-transition: color .3s ease;
+    -o-transition: color .3s ease;
+    transition: color .3s ease;
+}
+
+section.left-section section.playlist .playlist-card .name div a:hover {
+    color: var(--orange);
+}
+
+section.left-section section.playlist .playlist-card .name div h6 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+section.left-section section.playlist .playlist-card .time h6 {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+section.left-section section.playlist .playlist-card .like a i{
+    font-size: 1.32rem;
+    color: var(--pure);
+    -webkit-transition: color .3s ease;
+    -o-transition: color .3s ease;
+    transition: color .3s ease;
+}
+
+section.left-section section.playlist .playlist-card .like a i:hover {
+    color: var(--orange);
+}
+
+section.left-section section.playlist .playlist-card .like :first-child {
+    margin-right: 1rem;
+}
+
+/* Aside section */
+
+.section-heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.section-heading h2 {
+    font-size: 2rem;
+}
+
+.section-heading a {
+    font-size: 1.2rem;
+    -webkit-transition: color .3s ease;
+    -o-transition: color .3s ease;
+    transition: color .3s ease;
+}
+
+.section-heading a:hover {
+    color: var(--orange);
+}
+
+aside.my-playlist {
+    vertical-align: top;
+}
+
+aside.my-playlist .similar-artist {
+    margin-bottom: 1.5rem;
+}
+
+aside.my-playlist .similar-artist .similar-artist__card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;  
+    -webkit-box-pack: justify;  
+        -ms-flex-pack: justify;  
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+aside.my-playlist .similar-artist :last-child {
+    margin-bottom: 0;
+}
+
+aside.my-playlist .similar-artist .similar-artist__card img {
+    width: 100px;
+    height: 100px;
+}
+
+aside.my-playlist .similar-artist .similar-artist__card div a {
+    font-size: 1.2rem;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+aside.my-playlist .similar-artist .similar-artist__card div a:hover {
+    color: var(--orange);
+}
+
+aside.my-playlist .similar-artist .similar-artist__card h6 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+aside.my-playlist .recently-play .queue .queue-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+
+aside.my-playlist .recently-play .queue .queue-card .queue-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+aside.my-playlist .recently-play .queue .queue-card .queue-content span {
+    font-size: 1.1rem;
+    margin-right: 1.2rem;
+}
+
+aside.my-playlist .recently-play .queue .queue-card .queue-content img {
+    width: 100px;
+    height: 100px;
+    margin-right: 1rem;
+}
+
+aside.my-playlist .recently-play .queue .queue-card .queue-content div a {
+    font-size: 1.2rem;
+    -webkit-transition: color .3s ease;
+    -o-transition: color .3s ease;
+    transition: color .3s ease;
+}
+
+aside.my-playlist .recently-play .queue .queue-card .queue-content div a:hover {
+    color: var(--orange);
+}
+
+aside.my-playlist .recently-play .queue .queue-card .queue-content div h5 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+aside.my-playlist .recently-play .queue .queue-card a i {
+    font-size: 1.2rem;
+    -webkit-transition: color .3s ease;
+    -o-transition: color .3s ease;
+    transition: color .3s ease;
+}
+
+aside.my-playlist .recently-play .queue .queue-card a i:hover{
+    color: var(--orange);
+}

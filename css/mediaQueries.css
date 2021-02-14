@@ -1,0 +1,359 @@
+@media screen and (max-width: 1700px) {
+    .container {
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+
+    main section.left-section section.music-type .music-type__bottom-container {
+        overflow-x: scroll;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .container {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
+    main section.left-section section.latest-release .latest-release__songs div.song-card {
+        width: 100%;
+    }
+
+    main section.left-section section.music-type .music-type__card-container {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+
+    main section.left-section section.music-type .music-type__card-container .music-type__card {
+        margin-bottom: .8rem;
+    }
+
+
+    /* Single playlist page */
+
+    section.left-section header.about {
+        display: block;
+    }
+
+    section.left-section header.about .about-img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    section.left-section header.about .about-description {
+        width: 100%;
+    }
+
+    section.left-section header.about .about-description .about-description__heading div {
+        margin-left: 1rem;
+    }
+
+    section.left-section header.about .about-description .about-description__heading h6 {
+        margin-right: 1rem;
+    }
+
+    section.left-section header.about .about-description .about-content p {
+        padding: 1rem;
+    }
+
+    section.left-section header.about .about-description .about-footer {
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    }
+
+    section.left-section header.about .about-description .about-footer div {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+
+    section.left-section header.about .about-description .about-footer div button {
+        margin-right: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 1290px) {
+
+    .container {
+        max-width: 1100px;
+    }
+
+    main section.left-section {
+        margin-right: 0;
+        max-width: 100%;
+    }
+
+    main aside.my-playlist {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 1100px) {
+    .container {
+        max-width: 900px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    label.nav__button {
+        display: block;
+        top: 10px;
+        left: 5px;
+    }
+
+    #toggle:checked ~ nav.mobile-nav {
+        width: 40%;
+        opacity: 1;
+    }
+    
+    #toggle:checked ~ main {
+        left: 40%;
+        -webkit-transform: scale(.9);
+            -ms-transform: scale(.9);
+                transform: scale(.9);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        max-width: 800px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        max-width: 100%;
+    }
+
+    main {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    main section.left-section section.music-type .music-type__card-container {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+
+    main section.left-section section.music-type .music-type__card-container .main-container {
+        justify-content: center;
+    }
+}
+
+
+@media screen and (max-width: 570px) {
+    
+
+    #toggle:checked ~ nav.mobile-nav {
+        width: 70%;
+        opacity: 1;
+    }
+    
+    #toggle:checked ~ main {
+        left: 80%;
+        -webkit-transform: scale(.9);
+            -ms-transform: scale(.9);
+                transform: scale(.9);
+    }
+    
+    main section.left-section section.latest-release .latest-release__songs div.song-card .left {
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: end;
+    }
+
+    main section.left-section section.latest-release .latest-release__songs div.song-card {
+        display: block;
+    }
+
+    main section.left-section section.latest-release .latest-release__songs div.song-card .left .img {
+        margin-bottom: .8rem;
+    }
+
+    main section.left-section section.latest-release .latest-release__songs div.song-card .left h6 {
+        font-weight: 500;
+    }
+
+    main section.left-section section.latest-release .latest-release__songs div.song-card {
+        font-size: .9rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main section.left-section section.latest-release .latest-release__songs div.song-card i {
+        top: 50%;
+    }
+
+
+    /* Single playlist */
+
+    section.left-section header.about .about-description .about-footer div {
+        display: block;
+    }
+
+    section.left-section section.playlist .playlist-card {
+        height: auto;
+        display: block;
+    }
+
+    section.left-section section.playlist .playlist-card .name {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+
+    section.left-section section.playlist .playlist-card .time {
+        text-align: center;
+    }
+
+    section.left-section section.playlist .playlist-card .like {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-top: 1rem;
+    }
+
+    main aside.my-playlist {
+        margin-top: 4rem;
+    }
+
+    aside.my-playlist .similar-artist {
+        margin-bottom: 4rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    main section.left-section section.latest-release .latest-release__songs div.song-card .left .img {
+        height: 80px;
+        width: 80px;
+    }
+
+    main section.left-section section.latest-release .latest-release__songs div.song-card .left .img img {
+        height: 80px;
+        width: 80px;
+    }
+
+
+    /* Single playlist */
+    section.left-section header.about .about-description .about-description__heading {
+        display: block;
+    }
+
+    section.left-section header.about .about-description .about-description__heading div {
+        margin: 0;
+        text-align: center;
+    }
+
+    section.left-section header.about .about-description .about-description__heading h6 {
+        margin: 0;
+        text-align: center;
+    }
+
+    .section-heading {
+        display: block;
+    }
+
+    aside.my-playlist .similar-artist .similar-artist__card {
+        display: block;
+        background-color: var(--bg-gray-light);
+        padding: 1rem;
+        border-radius: 10px;
+    }
+
+    aside.my-playlist .similar-artist .similar-artist__card img {
+        margin: 0 auto;
+    }
+
+    aside.my-playlist .similar-artist .similar-artist__card img + div {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    aside.my-playlist .similar-artist :last-child {
+        text-align: center;
+    }
+
+    aside.my-playlist .recently-play .queue {
+        margin-top: 3rem;
+    }
+
+    aside.my-playlist .recently-play .queue .queue-card {
+        display: block;
+        background-color: var(--bg-gray-light);
+        padding: 1rem;
+    }
+
+    aside.my-playlist .recently-play .queue .queue-card .queue-content {
+        margin-bottom: 1rem;
+    }
+
+}
+
+@media  screen and (max-width: 360px) {
+
+    #toggle:checked ~ nav.mobile-nav {
+        width: 90%;
+        opacity: 1;
+    }
+    
+    #toggle:checked ~ main {
+        left: 95%;
+        -webkit-transform: scale(.9);
+            -ms-transform: scale(.9);
+                transform: scale(.9);
+    }
+
+    main section.left-section section.latest-release .latest-release__songs div.song-card .left h6 {
+        font-size: .9rem;
+    }
+
+    main section.left-section section.latest-release .latest-release__songs div.song-card {
+        font-size: .6rem;
+    }
+
+    main section.left-section section.popular-artist div.artist-container div.artist h6 {
+        font-size: .8rem;
+    }
+
+    main section.left-section section.latest-songs .latest-songs__container .latest-card a {
+        font-size: .9rem;
+    }
+
+    main section.left-section section.latest-songs .latest-songs__container .latest-card h6 {
+        font-size: .8rem;
+    }
+
+    main aside.my-playlist .queue .queue-card {
+        display: block;
+    }
+
+    main aside.my-playlist .queue .queue-card .queue-content div a {
+        font-size: 1rem;
+    }
+
+    main aside.my-playlist .queue .queue-card .queue-content div h5 {
+        font-size: .9rem;
+    }
+}

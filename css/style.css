@@ -1,0 +1,646 @@
+main section.left-section header.img-container {
+    overflow-x: scroll;
+    padding-bottom: 2rem;
+}
+
+
+main section.left-section header.img-container div.img-slider {
+    width: 100rem;
+    height: 330px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+main section.left-section header.img-container div.img-slider div.img-box {
+    margin-right: 1.1rem;
+    height: 300px;
+    width: 300px;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+main section.left-section header.img-container div.img-slider div.img-box:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+}
+
+main section.left-section header.img-container:hover div.img-slider div.img-box:not(:hover) {
+    -webkit-transform: scale(.9);
+        -ms-transform: scale(.9);
+            transform: scale(.9);
+}
+
+/**********************************************************************************************************************/
+/********** Latest song release section start**************/
+
+main section.left-section section.latest-release {
+    padding-top: 3rem;
+}
+
+
+main section.left-section section.latest-release .latest-release__songs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+/******* Soung card style **************/
+
+main section.left-section section.latest-release .latest-release__songs div.song-card {
+    width: 50%;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    -webkit-transition: background-color .3s ease;
+    -o-transition: background-color .3s ease;
+    transition: background-color .3s ease;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;   
+
+}
+
+main section.left-section section.latest-release .latest-release__songs div.song-card:hover {
+    background-color: var(--bg-color--light);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+}
+
+main section.left-section section.latest-release .latest-release__songs:hover div.song-card:not(:hover) {
+    -webkit-transform: scale(.9);
+        -ms-transform: scale(.9);
+            transform: scale(.9);
+}
+
+main section.left-section section.latest-release .latest-release__songs div.song-card i {
+    font-size: 1.2rem;
+    position: absolute;
+    top: 0;
+    right: 2.5rem;
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+}
+
+main section.left-section section.latest-release .latest-release__songs div.song-card .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+main section.left-section section.latest-release .latest-release__songs div.song-card .left .img {
+    height: 150px;
+    width: 150px;
+    margin-right: 1.1rem;
+}
+
+main section.left-section section.latest-release .latest-release__songs div.song-card .left .img img {
+    max-width: 100%;
+    height: auto;
+}
+
+main section.left-section section.latest-release .latest-release__songs div.song-card .left a {
+    -webkit-transition: color .3s ease;
+    -o-transition: color .3s ease;
+    transition: color .3s ease;
+}
+
+main section.left-section section.latest-release .latest-release__songs div.song-card .left a:hover {
+    color: var(--orange);
+}
+
+main section.left-section section.latest-release .latest-release__songs div.song-card .left h6 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+main section.left-section section.latest-release .latest-release__songs div.song-card .right {
+    margin-right: 2rem;
+}
+
+
+/********** Latest song release section end **************/
+/**********************************************************************************************************************/
+
+/**********************************************************************************************************************/
+/********** Popular artist section start**************/
+
+
+main section.left-section section.popular-artist {
+    overflow-x: scroll;
+}
+
+main section.left-section section.popular-artist div.artist-container {
+    width: 100rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+/* Artist card*/
+
+main section.left-section section.popular-artist div.artist-container div.artist:not(:last-child) {
+    margin-right: 2rem;
+}
+
+main section.left-section section.popular-artist div.artist-container div.artist .bg-img {
+    width: 150px;
+    height: 150px;
+    background-size: 100%;
+    background-position: center;
+    -webkit-transition: background-size .5s ease;
+    -o-transition: background-size .5s ease;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    border-radius: 50%;
+    position: relative;
+}
+
+
+main section.left-section section.popular-artist div.artist-container div.artist h6 {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 1.2rem;
+}
+
+/* Set background images */
+main section.left-section section.popular-artist div.artist-container .artist .img-1{   
+    background: -o-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)) ,url("../img/artists/asset\ 1.jpeg");   
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.2)), to(rgba(0,0,0,0.6))) ,url("../img/artists/asset\ 1.jpeg");   
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)) ,url("../img/artists/asset\ 1.jpeg");
+}
+
+main section.left-section section.popular-artist div.artist-container .artist .img-2{   
+    background: -o-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)),url("../img/artists/asset\ 2.jpeg");   
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.2)), to(rgba(0,0,0,0.6))),url("../img/artists/asset\ 2.jpeg");   
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)),url("../img/artists/asset\ 2.jpeg");
+}
+
+main section.left-section section.popular-artist div.artist-container .artist .img-3{   
+    background: -o-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)),url("../img/artists/asset\ 3.jpeg");   
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.2)), to(rgba(0,0,0,0.6))),url("../img/artists/asset\ 3.jpeg");   
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)),url("../img/artists/asset\ 3.jpeg");
+}
+
+main section.left-section section.popular-artist div.artist-container .artist .img-4{   
+    background: -o-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)),url("../img/artists/asset\ 4.jpeg");   
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.2)), to(rgba(0,0,0,0.6))),url("../img/artists/asset\ 4.jpeg");   
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)),url("../img/artists/asset\ 4.jpeg");
+}
+
+main section.left-section section.popular-artist div.artist-container .artist .img-5{   
+    background: -o-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)),url("../img/artists/asset\ 5.jpeg");   
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.2)), to(rgba(0,0,0,0.6))),url("../img/artists/asset\ 5.jpeg");   
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)),url("../img/artists/asset\ 5.jpeg");
+}
+
+main section.left-section section.popular-artist div.artist-container .artist .img-6{   
+    background: -o-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)),url("../img/artists/asset\ 6.jpeg");   
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.2)), to(rgba(0,0,0,0.6))),url("../img/artists/asset\ 6.jpeg");   
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)),url("../img/artists/asset\ 6.jpeg");
+}
+
+main section.left-section section.popular-artist div.artist-container .artist .img-7{   
+    background: -o-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)),url("../img/artists/asset\ 7.jpeg");   
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.2)), to(rgba(0,0,0,0.6))),url("../img/artists/asset\ 7.jpeg");   
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)),url("../img/artists/asset\ 7.jpeg");
+}
+
+main section.left-section section.popular-artist div.artist-container .artist .img-8{   
+    background: -o-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)),url("../img/artists/asset\ 8.jpeg");   
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.2)), to(rgba(0,0,0,0.6))),url("../img/artists/asset\ 8.jpeg");   
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)),url("../img/artists/asset\ 8.jpeg");
+}
+
+main section.left-section section.popular-artist div.artist-container .artist .img-9{   
+    background: -o-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)),url("../img/artists/asset\ 9.jpeg");   
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.2)), to(rgba(0,0,0,0.6))),url("../img/artists/asset\ 9.jpeg");   
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)),url("../img/artists/asset\ 9.jpeg");
+}
+
+main section.left-section section.popular-artist div.artist-container .artist a.slide-up {
+    position: absolute;
+    bottom: -10%;
+    left: 35%;
+    font-size: 3rem;
+    opacity: 0;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+main section.left-section section.popular-artist div.artist-container .artist a.slide-up:hover {
+    color: var(--orange);
+}
+
+main section.left-section section.popular-artist div.artist-container div.artist .bg-img:hover {
+    background-size: 120%;
+}
+
+main section.left-section section.popular-artist div.artist-container div.artist .bg-img:hover a.slide-up {
+    bottom: 25%;
+    opacity: 1;
+}
+
+/********** Popular artist section end **************/
+/**********************************************************************************************************************/
+
+/**********************************************************************************************************************/
+/********** Music type section start**************/
+
+main section.left-section section.music-type {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+main section.left-section section.music-type .music-type__card-container {
+    background-color: var(--bg-color--light);
+    padding: 3rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+main section.left-section section.music-type .music-type__card-container .main-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    flex-wrap: wrap;
+}
+
+main section.left-section section.music-type .music-type__card-container .music-type__card {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    position: relative;
+    background-size: 150px 150px;
+    background-position: center;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+
+/* Set background images */
+
+main section.left-section section.music-type .music-type__card-container .bg-1 {
+    background-image: -o-linear-gradient(330deg, rgba(0,0,0,0.35) 100%, rgba(0,0,0,0) 100%),url("../img/stations/s1.jpeg");
+    background-image: linear-gradient(120deg, rgba(0,0,0,0.35) 100%, rgba(0,0,0,0) 100%),url("../img/stations/s1.jpeg");
+}
+
+main section.left-section section.music-type .music-type__card-container .bg-2 {
+    background-image: -o-linear-gradient(330deg, rgba(0,0,0,0.35) 100%, rgba(0,0,0,0) 100%),url("../img/stations/s2.jpeg");
+    background-image: linear-gradient(120deg, rgba(0,0,0,0.35) 100%, rgba(0,0,0,0) 100%),url("../img/stations/s2.jpeg");
+}
+
+main section.left-section section.music-type .music-type__card-container .bg-3 {
+    background-image: -o-linear-gradient(330deg, rgba(0,0,0,0.35) 100%, rgba(0,0,0,0) 100%),url("../img/stations/s3.jpeg");
+    background-image: linear-gradient(120deg, rgba(0,0,0,0.35) 100%, rgba(0,0,0,0) 100%),url("../img/stations/s3.jpeg");
+}
+
+main section.left-section section.music-type .music-type__card-container .bg-4 {
+    background-image: -o-linear-gradient(330deg, rgba(0,0,0,0.35) 100%, rgba(0,0,0,0) 100%),url("../img/stations/s4.jpeg");
+    background-image: linear-gradient(120deg, rgba(0,0,0,0.35) 100%, rgba(0,0,0,0) 100%),url("../img/stations/s4.jpeg");
+}
+
+main section.left-section section.music-type .music-type__card-container .bg-5 {
+    background-image: -o-linear-gradient(330deg, rgba(0,0,0,0.35) 100%, rgba(0,0,0,0) 100%),url("../img/stations/s5.jpeg");
+    background-image: linear-gradient(120deg, rgba(0,0,0,0.35) 100%, rgba(0,0,0,0) 100%),url("../img/stations/s5.jpeg");
+}
+
+main section.left-section section.music-type .music-type__card-container .bg-6 {
+    background-image: -o-linear-gradient(330deg, rgba(0,0,0,0.35) 100%, rgba(0,0,0,0) 100%),url("../img/stations/s6.jpeg");
+    background-image: linear-gradient(120deg, rgba(0,0,0,0.35) 100%, rgba(0,0,0,0) 100%),url("../img/stations/s6.jpeg");
+}
+
+main section.left-section section.music-type .music-type__card-container .music-type__card .music-type__card--text-box {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    opacity: 0;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+main section.left-section section.music-type .music-type__card-container .music-type__card:hover {
+    background-size: 200px 200px;
+}
+
+main section.left-section section.music-type .music-type__card-container .music-type__card:hover .music-type__card--text-box{
+    bottom: 35%;
+    left: 30%;
+    opacity: 1;
+}
+
+
+main section.left-section section.music-type .music-type__card-container .music-type__card .music-type__card--text-box a {
+    font-size: 1.8rem;
+    font-weight: 600;
+    -webkit-transition: color .3s ease;
+    -o-transition: color .3s ease;
+    transition: color .3s ease;
+}
+
+main section.left-section section.music-type .music-type__card-container .music-type__card .music-type__card--text-box a:hover {
+    color: var(--orange);
+}
+
+/* Bottom container  */
+main section.left-section section.music-type .music-type__bottom-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+main section.left-section section.music-type .music-type__bottom-container .music-type__card-b {
+    width: 350px;
+    height: 250px;
+    border-radius: 10px;
+    margin-right: 1.5rem;
+}
+
+main section.left-section section.music-type .music-type__bottom-container :last-child {
+    margin-right: 0;
+}
+
+main section.left-section section.music-type .music-type__bottom-container .music-type__card-b .drop {
+    width: 0%;
+    height: 100%;
+    background: -o-linear-gradient(rgba(12, 16, 39,0.7), rgba(18, 25, 62,1));
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 16, 39,0.7)), to(rgba(18, 25, 62,1)));
+    background: linear-gradient(rgba(12, 16, 39,0.7), rgba(18, 25, 62,1));
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+main section.left-section section.music-type .music-type__bottom-container .music-type__card-b .drop .text-box {
+    width: 350px;
+    height: 250px;
+    text-align: center;
+    line-height: 250px;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+}
+
+main section.left-section section.music-type .music-type__bottom-container .music-type__card-b .drop .text-box a {
+    font-size: 2rem;
+    -webkit-transition: color .3s ease;
+    -o-transition: color .3s ease;
+    transition: color .3s ease;
+}
+
+main section.left-section section.music-type .music-type__bottom-container .music-type__card-b .drop .text-box a:hover {
+    color: var(--orange);
+}
+
+main section.left-section section.music-type .music-type__bottom-container .music-type__card-b:hover .drop {
+    width: 100%;
+}
+
+main section.left-section section.music-type .music-type__bottom-container .music-type__card-b:hover .drop .text-box {
+    opacity: 1;
+}
+
+main section.left-section section.music-type .music-type__bottom-container .b-1 {
+    background-image: url("../img/stations/ss1.jpg");
+}
+
+main section.left-section section.music-type .music-type__bottom-container .b-2 {
+    background-image: url("../img/stations/ss2.jpg");
+}
+
+main section.left-section section.music-type .music-type__bottom-container .b-3 {
+    background-image: url("../img/stations/ss3.jpg");
+}
+
+/********** Music type section end **************/
+/**********************************************************************************************************************/
+
+
+/**********************************************************************************************************************/
+/********** Latest song section start**************/
+
+/* Latest english songs section */
+
+main section.left-section section.latest-songs {
+    overflow-x: scroll;
+    padding-bottom: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+main section.left-section section.latest-songs .latest-songs__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1200px;
+}
+
+main section.left-section section.latest-songs .latest-songs__container .latest-card {
+    margin-right: 1.5rem;
+}
+
+main section.left-section section.latest-songs .latest-songs__container :last-child {
+    margin-right: 0;
+}
+
+main section.left-section section.latest-songs .latest-songs__container .latest-card .latest-card__img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: .5rem;
+}
+
+main section.left-section section.latest-songs .latest-songs__container .latest-card .latest-card__img img {
+    max-width: 100%;
+    height: auto;
+}
+
+main section.left-section section.latest-songs .latest-songs__container .latest-card a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    -webkit-transition: color .3s ease;
+    -o-transition: color .3s ease;
+    transition: color .3s ease;
+}
+
+main section.left-section section.latest-songs .latest-songs__container .latest-card a:hover {
+    color: var(--orange);
+}
+
+main section.left-section section.latest-songs .latest-songs__container .latest-card h6 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/********** Latest song section end **************/
+/**********************************************************************************************************************/
+
+/**********************************************************************************************************************/
+/********** Aside section start**************/
+
+main aside.my-playlist {
+    vertical-align: top;
+}
+
+main aside.my-playlist .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+main aside.my-playlist .title h2 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+main aside.my-playlist .title div a {
+    font-size: 1.2rem;
+    margin-right: 1.2rem;
+    -webkit-transition: color .3s ease;
+    -o-transition: color .3s ease;
+    transition: color .3s ease;
+}
+
+main aside.my-playlist .title div a:hover {
+    color: var(--green-light);
+}
+
+main aside.my-playlist .title div i {
+    font-size: 1.2rem;
+    vertical-align: center;
+}
+
+
+/* Queue */
+
+main aside.my-playlist .queue {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 2rem;
+}
+
+main aside.my-playlist .queue .queue-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: .8rem;
+    margin-bottom: 1.5rem;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+main aside.my-playlist .queue .queue-card:hover {
+    background-color: var(--bg-color--light);
+    border-radius: 8px;
+}
+
+main aside.my-playlist .queue .queue-card .queue-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+main aside.my-playlist .queue .queue-card .queue-content img {
+    width: 100px;
+    height: 100px;
+    margin-right: 1.5rem;
+}
+
+main aside.my-playlist .queue .queue-card .queue-content span {
+    font-size: 1.1rem;
+    margin-right: 1.2rem;
+}
+
+main aside.my-playlist .queue .queue-card .queue-content div a {
+    font-size: 1.3rem;
+    -webkit-transition: color .3s ease;
+    -o-transition: color .3s ease;
+    transition: color .3s ease;
+}
+
+main aside.my-playlist .queue .queue-card .queue-content div h5 {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+main aside.my-playlist .queue .queue-card .queue-content div a:hover {
+    color: var(--orange);
+}
+
+main aside.my-playlist .queue .queue-card a i {
+    font-size: 1.2rem;
+    -webkit-transition: color .3s ease;
+    -o-transition: color .3s ease;
+    transition: color .3s ease;
+}
+
+main aside.my-playlist .queue .queue-card a:hover i {
+    color: var(--orange);
+}
+
+/********** Aside section end **************/
+/**********************************************************************************************************************/
+
+/********** Main section end **************/

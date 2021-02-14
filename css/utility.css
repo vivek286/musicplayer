@@ -1,0 +1,586 @@
+:root {
+    --bg-color--dark    : #0c1027;
+    --bg-color--light   : #12193e;
+    --bg-gray-light     : #202439;
+    --bg-gray-dark      : #1a1e33;
+    --light-blue        : #12193e;
+    --gray-light        : #9a9fa8;
+    --gray-dark         : #282828;
+    --green-light       : #30e37f;
+    --purple-dark       : #5233b7;
+    --purple-light      : #5233b7;
+    --primary           : #ffffff;
+    --orange            : #ff4f0a;
+    --yellow-dark       : #f0bc10;
+    --yellow-light      : #f9d64c;
+}
+
+
+/*******   Basic reset settings start  ******/
+/* set box sizing to all elments */
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* html  */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Remove default margins */
+body {
+    background-color: var(--bg-color--dark);
+    min-height: 100vh;   
+    line-height: 1.6;
+
+    /*Set root font size to 10 px*/
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary);
+}
+
+img,
+picture {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 1rem;
+}
+
+input {
+    outline: none;
+}
+
+/* Set custom scrollbars */
+::-webkit-scrollbar {
+    height: 2px;
+    scrollbar-width: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--bg-color--dark);
+    scrollbar-color: var(--bg-color--dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--bg-color--light);
+}
+
+/*******   Basic reset settings end  ******/
+/**********************************************************************************************************************/
+
+
+
+
+/**********************************************************************************************************************/
+/*****  Utility classes start ******/
+
+/* Container */
+.container {
+    max-width: 1700px;
+    margin: 0 auto;
+}
+ 
+/* Section heading */
+.heading {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+/* Animation class */
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+            animation-name: fadeInDown;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+
+}
+
+.fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+            animation-name: fadeInLeft;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+}
+
+.fadeInRight {
+    -webkit-animation-name: fadeInRight;
+            animation-name: fadeInRight;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+}
+
+/****** Utility classes end ******/
+/**********************************************************************************************************************/
+
+
+
+
+
+/**********************************************************************************************************************/
+/****** Hamburger  start ******/ 
+/* Mobile navigation icon */
+label.nav__button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: none;
+}
+
+label.nav__button i{
+    font-size: 2rem;
+}
+
+input#toggle {
+    width: 0;
+    height: 0;
+}
+
+nav.mobile-nav {
+    height: 100vh;
+    display: block;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 16, 39,0.7)), to(rgba(18, 25, 62,1)));
+    background: -o-linear-gradient(rgba(12, 16, 39,0.7), rgba(18, 25, 62,1));
+    background: linear-gradient(rgba(12, 16, 39,0.7), rgba(18, 25, 62,1));
+    position: absolute;
+    top: 0;
+    left: 0; 
+    width: 0%;
+    opacity: 0;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+nav.mobile-nav .logo {
+    margin-top: 2rem;
+}
+
+nav.mobile-nav .search-box {
+    margin-bottom: 1rem;
+    margin-top: 4rem;
+    width: 95%;
+}
+
+nav.mobile-nav ul li {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: var(--bg-color--light);
+    width: 200px;
+    border-radius: 5px;
+}
+
+nav.mobile-nav .icon-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: var(--bg-color--dark);
+    width: 200px;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+/****** Hamburger end ******/
+/**********************************************************************************************************************/
+
+
+
+/**********************************************************************************************************************/
+/********** Nav bar for desktop start**************/
+nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: .5rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+/* N/**********************************************************************************************************************/
+/********** Nav bar for desktop start************** */
+.navigation .nav-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /* -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; */
+    padding: .3rem;
+}
+
+/* Make a logo */
+.navigation .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 2rem;
+}
+
+.navigation .logo .icon {
+    width: 50px;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 50%;
+    background: -o-radial-gradient(var(--purple-dark), var(--purple-light));
+    background: radial-gradient(var(--purple-dark), var(--purple-light));
+    margin-right: .8rem;
+}
+
+.navigation .logo .icon i {
+    font-size: 1.5rem;
+}
+
+.navigation .logo-text {
+    font-size: .9rem;
+}
+
+.navigation .logo-text h3 {
+    font-weight: 500;
+}
+
+.navigation .logo-text span {
+    font-weight: 600;
+}
+
+.navigation a {
+    margin-right: 2rem;
+    transition: color .3s ease;
+}
+
+.navigation a:hover {
+    color: var(--orange);
+}
+
+.navigation :last-child {
+    margin-right: 0;
+}
+/* Nav nav-left box end */
+
+
+/* Nav nav-right box start */
+
+.navigation .nav-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+/* Search bar styling */
+.navigation .search-box {
+    width: 30rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: var(--bg-color--light);
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    margin-right: 2rem;
+}
+
+.navigation .search-box i {
+    font-size: 1.1rem;
+}
+
+.navigation .search-box input{
+    width: 100%;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: .5rem;
+    background-color: var(--bg-color--light);
+    color: var(--primary);
+}
+
+.navigation .search-box input::-webkit-input-placeholder {
+    color: var(--primary);
+    font-size: 1.2rem;
+}
+
+.navigation .search-box input::-moz-placeholder {
+    color: var(--primary);
+    font-size: 1.2rem;
+}
+
+.navigation .search-box input:-ms-input-placeholder {
+    color: var(--primary);
+    font-size: 1.2rem;
+}
+
+.navigation .search-box input::-ms-input-placeholder {
+    color: var(--primary);
+    font-size: 1.2rem;
+}
+
+.navigation .search-box input::placeholder {
+    color: var(--primary);
+    font-size: 1.2rem;
+}
+
+/* Notification icon */
+
+.navigation .notification-icon {
+    position: relative;
+}
+
+.navigation .notification-icon::after {
+    content: '';
+    height: 5px;
+    width: 5px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+.navigation .notification-icon i {
+    font-size: 1.5rem;
+}
+
+/* Profile pic */
+
+.navigation .profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--bg-color--light);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+
+.navigation .profile-pic i {
+    font-size: 1.1rem;
+}
+
+/********** Nav bar for desktop end**************/
+/**********************************************************************************************************************/
+
+/**********************************************************************************************************************/
+/********** Main section start**************/
+/* Set layout */
+main {
+    padding-top: 5rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+main section.left-section {
+    max-width: 65%;
+    display: inline-block;
+    margin-right: 3rem;
+}
+
+main aside.my-playlist {
+    width: 30%; 
+    display: inline-block;
+}
+
+/********** Main section end **************/
+/**********************************************************************************************************************/
+
+
+
+
+
+/**********************************************************************************************************************/
+/********** Anaimation keyframes **************/
+/* Animations */
+
+@-webkit-keyframes fadeInDown {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+              transform: translate3d(0, -100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+}
+@keyframes fadeInDown {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+              transform: translate3d(0, -100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+}
+  
+@-webkit-keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(-50%, 0, 0);
+              transform: translate3d(-50%, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+}
+  
+@keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(-50%, 0, 0);
+              transform: translate3d(-50%, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+}
+
+@-webkit-keyframes fadeInRight {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(100%, 0, 0);
+              transform: translate3d(100%, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(100%, 0, 0);
+              transform: translate3d(100%, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+}
+/*********************************************************************/
+
+/******* Footer *********/
+
+footer {
+    height: 15vh;
+    background-color: var(--bg-color--light);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+footer h3 a {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    padding: 5px 1rem;
+    display: inline-block;
+    transition: all .3s ease;
+}
+
+footer h3 a:hover {
+    transform: rotateZ(-10deg);
+    background-color: var(--bg-color--dark);
+    color: var(--orange);
+}
